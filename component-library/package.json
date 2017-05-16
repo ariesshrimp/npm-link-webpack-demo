@@ -1,0 +1,28 @@
+{
+  "main": "dist/components.js",
+  "name": "component-library",
+  "scripts": {
+    "build": "webpack --watch src/components",
+    "dev": "webpack-dev-server --config=webpack.dev.js",
+    "start": "concurrently --prefix \"[{name}]\" --names \"build,playground\" -c \"bgBlue.white,bgMagenta.white\" \"npm run build\" \"npm run dev\" ",
+    "watch": "nodemon --watch package.json --watch webpack.config.js --watch webpack.dev.js --exec \"npm start\" "
+  },
+  "devDependencies": {
+    "babel-core": "6.24.1",
+    "babel-loader": "6.4.0",
+    "babel-preset-meridian": "1.0.0",
+    "concurrently": "3.4.0",
+    "css-loader": "0.27.1",
+    "extract-text-webpack-plugin": "2.1.0",
+    "html-webpack-plugin": "2.28.0",
+    "nodemon": "1.11.0",
+    "react": "15.4.2",
+    "react-dom": "15.5.4",
+    "style-loader": "0.13.2",
+    "webpack": "2.2.1",
+    "webpack-dev-server": "2.4.5"
+  },
+  "peerDependencies": {
+    "react": "15.4.2"
+  }
+}

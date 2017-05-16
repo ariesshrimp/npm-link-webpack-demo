@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "babel-core": "6.24.1",
+    "babel-loader": "6.4.0",
+    "babel-preset-meridian": "1.0.0",
+    "html-webpack-plugin": "2.28.0",
+    "nodemon": "1.11.0",
+    "webpack": "2.2.1",
+    "webpack-dev-server": " 2.4.1"
+  },
+  "dependencies": {
+    "react": "15.4.2",
+    "react-dom": "15.4.2"
+  },
+  "scripts": {
+    "start": "webpack-dev-server",
+    "watch": "nodemon --watch package.json --watch webpack.config.js --exec \"npm start\" "
+  }
+}
